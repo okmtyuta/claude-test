@@ -10,6 +10,10 @@ def fibonacci(n):
     """
     Calculate the nth Fibonacci number using recursive method.
     
+    Note: This implementation has exponential time complexity O(2^n).
+    For larger inputs (n > 30), consider using memoization or an iterative
+    approach for better performance.
+    
     Args:
         n (int): The position in the Fibonacci sequence (0-indexed)
         

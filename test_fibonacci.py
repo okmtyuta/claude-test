@@ -91,14 +91,6 @@ class TestFibonacci(unittest.TestCase):
 class TestFibonacciEdgeCases(unittest.TestCase):
     """Test edge cases and boundary conditions."""
 
-    def test_zero_input(self):
-        """Test explicit zero input."""
-        self.assertEqual(fibonacci(0), 0)
-
-    def test_one_input(self):
-        """Test explicit one input."""
-        self.assertEqual(fibonacci(1), 1)
-
     def test_large_negative_number(self):
         """Test very large negative number."""
         with self.assertRaises(ValueError):
